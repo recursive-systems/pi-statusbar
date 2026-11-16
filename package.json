@@ -1,0 +1,32 @@
+{
+  "name": "pi-statusbar",
+  "version": "0.1.0",
+  "description": "A status bar for the Pi coding agent: each extension gets its own row below the editor instead of sharing the footer's one status line.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "statusbar",
+    "status"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recursive-systems/pi-statusbar.git"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  }
+}
